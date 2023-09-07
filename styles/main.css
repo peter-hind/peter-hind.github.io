@@ -1,3 +1,4 @@
+/* COLOUR SCHEME */
 :root {
   --strong-color: #f23005;
   --mid-color: #f24f13;
@@ -6,6 +7,7 @@
   --light-monochrome: #f2f2f2;
 }
 
+/* NAV-BAR */
 nav {
   position: fixed;
   top: 0;
@@ -24,7 +26,6 @@ nav > * {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  list-style-type: none;
   font-size: clamp(15px, 1.5vw, 25px);
   text-transform: uppercase;
 }
@@ -32,9 +33,10 @@ nav > * {
 ul {
   margin: 0px;
   padding: 0px;
+  list-style-type: none;
 }
 
-li:hover {
+nav li:hover {
   color: var(--light-color);
 }
 
@@ -57,13 +59,22 @@ body {
   font-size: 1.125rem;
 }
 
-section,
-h2 {
-  margin: 0px;
+.basic-section {
+  padding: 10vh 30vw;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.basic-img {
+  display: block;
+  height: 40vh;
+  width: auto;
+  margin: 5vh auto;
 }
 
 h2 {
   text-transform: uppercase;
+  text-align: center;
 }
 
 #recent-blog {
@@ -122,6 +133,13 @@ main {
 
 footer {
   background-color: var(--dark-monochrome);
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icon {
+  width: 3vw;
+  height: auto;
 }
 
 p {
@@ -163,12 +181,42 @@ p {
   position: relative;
   left: 12vw;
 }
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 8vh;
+  gap: 10px;
+}
+
+.blog-item {
+  border: #f24f13 2px solid;
+  border-radius: 5px;
+}
+
+.grid-image {
+  width: 5vw;
+  height: auto;
+}
+
+footer {
+  background-color: var(--dark-monochrome);
+  padding: 5vh 5vw;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer li {
+  margin: 40px;
+}
+
 @media screen and (min-width: 3300px) {
   .hero-column1 {
     margin-left: 20vw;
   }
   .hero-column2 {
-    margin-right: 20vw;
+    margin-right: 10vw;
   }
 }
 @media screen and (max-width: 2190px) {
@@ -191,6 +239,12 @@ p {
   }
   .hero-column1 {
     margin-left: 20vw;
+  }
+  .basic-img {
+    height: 30vw;
+  }
+  .basic-section {
+    padding: 10vh 10vw;
   }
 }
 
@@ -221,5 +275,22 @@ p {
 
   #hero-section {
     display: block;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-image {
+    width: 15vw;
+    height: auto;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .social-icon {
+    width: 10vw;
   }
 }
