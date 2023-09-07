@@ -17,20 +17,21 @@
     <header>
       <nav>
         <ul>
-          <li>About</li>
-          <li>Contact</li>
-          <img
-            src="img/nav-logo.png"
-            alt="Pete looking quizzical"
-            class="nav-logo"
-          />
-          <li>Tech</li>
-          <li>Core</li>
+          <li><a href="#">About</a></li>
+          <li><a href="#pagebottom">Contact</a></li>
+          <a href="index.html"
+            ><img
+              src="img/nav-logo.png"
+              alt="Pete looking quizzical"
+              class="nav-logo"
+          /></a>
+          <li><a href="blog/html-css.html">Tech</a></li>
+          <li><a href="#">Core</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <section id="hero-section">
+    <main id="pagetop">
+      <section id="hero-section" class="hero">
         <div class="hero-column1">
           <h1>
             Welcome <br />
@@ -66,22 +67,24 @@
           </p>
         </div>
       </section>
-      <section id="recent-blog" class="basic-section">
+      <section id="dark-blog" class="basic-section">
         <h2>Check out my most recent Tech post!</h2>
         <p>
-          This one is about the CSS Box Model and Paddings and Margins and
-          Borders and exciting stuff like that. It's one of those concepts (like
-          most concepts in programming as it turn out) that seems easy at first.
-          But then you actually try to get it to work and... damn. Those margins
-          like to overlap each other, and contents like to jump out of their
-          boxes... it's a disaster really. Anyway - this post just covers the
-          basics!
+          This one is about the
+          <a href="blog/html-css.html">CSS Box Model</a> and Paddings and
+          Margins and Borders and exciting stuff like that. It's one of those
+          concepts (like most concepts in programming as it turn out) that seems
+          easy at first. But then you actually try to get it to work and...
+          damn. Those margins like to overlap each other, and contents like to
+          jump out of their boxes... it's a disaster really. Anyway - this post
+          just covers the basics!
         </p>
-        <img
-          src="img/box-model.png"
-          alt="diagram of the CSS box model"
-          class="basic-img"
-        />
+        <a href="blog/html-css.html"
+          ><img
+            src="img/box-model.png"
+            alt="diagram of the CSS box model"
+            class="basic-img"
+        /></a>
       </section>
       <div class="divider divider2"></div>
       <section id="upcoming-blog" class="basic-section">
@@ -98,15 +101,17 @@
             <img src="img/gridpete.png" alt="Pic of Pete" class="grid-image" />
             <h4>Identity & Values</h4>
           </div>
-          <div class="blog-item">
-            <h3>Sprint 2</h3>
-            <img
-              src="img/htmlcss.png"
-              alt="HTML & CSS Logos"
-              class="grid-image"
-            />
-            <h4>The CSS Box Model</h4>
-          </div>
+          <a href="blog/html-css.html"
+            ><div class="blog-item">
+              <h3>Sprint 2</h3>
+              <img
+                src="img/htmlcss.png"
+                alt="HTML & CSS Logos"
+                class="grid-image"
+              />
+              <h4>The CSS Box Model</h4>
+            </div></a
+          >
           <div class="blog-item">
             <h3>Sprint 3</h3>
             <img src="img/js.png" alt="JavaScript Logo" class="grid-image" />
@@ -139,17 +144,20 @@
       </section>
       <div class="divider divider3"></div>
     </main>
-    <footer>
+    <footer id="pagebottom">
       <div class="contact">
         <h2>CONTACT</h2>
         <ul>
           <li>PHONE - 0485 352 159</li>
-          <li>EMAIL - peter.hind@nottellingyou.com</li>
+          <li>EMAIL - peter.hind@nottelling.com</li>
+          <li><a href="#pagetop">BACK TO TOP</a></li>
         </ul>
       </div>
       <div class="socials">
         <img src="img/linkedin.png" alt="linkedin logo" class="social-icon" />
-        <img src="img/github.png" alt="github logo" class="social-icon" />
+        <a href="https://github.com/peter-hind" target="_blank"
+          ><img src="img/github.png" alt="github logo" class="social-icon"
+        /></a>
       </div>
     </footer>
   </body>
