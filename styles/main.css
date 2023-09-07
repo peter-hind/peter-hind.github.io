@@ -76,6 +76,10 @@ a:visited {
   background-image: url(../img/layereddiv3.svg);
 }
 
+.divider4 {
+  background-image: url(../img/layereddiv4.svg);
+}
+
 /* NAV-BAR */
 nav {
   position: fixed;
@@ -212,6 +216,10 @@ nav a:hover {
   border-radius: 5px;
 }
 
+.grid-purple {
+  border: #590202 2px solid;
+}
+
 .blog-grid a {
   text-decoration: none;
 }
@@ -227,6 +235,10 @@ nav a:hover {
   align-items: center;
   gap: 60px;
   margin: 0 0 100px 0;
+}
+
+#core-grid {
+  margin-top: 150px;
 }
 
 footer {
