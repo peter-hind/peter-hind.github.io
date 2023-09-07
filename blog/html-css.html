@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>The CSS Box Model</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="icon" href="../img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#pagebottom">Contact</a></li>
+          <img
+            src="../img/nav-logo.png"
+            alt="Pete looking quizzical"
+            class="nav-logo"
+          />
+          <li><a href="blog/html-css.html">Tech</a></li>
+          <li><a href="#">Core</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="pagetop">
+      <section class="blog-hero">
+        <h1>The CSS Box Model - What does it all mean?!</h1>
+        <img
+          src="../img/box-model.png"
+          alt="The CSS Box Model"
+          class="basic-img"
+        />
+      </section>
+      <div class="divider divider1"></div>
+      <section id="dark-blog" class="basic-section">
+        <h2>HTML Elements and their Boxes</h2>
+        <p>
+          HTML Elements and their layout are responsible for forming the basic
+          structure of a webpage. Different elements can nest within one another
+          to create unique and interesting formats. However, for these elements
+          to come to life and display as their designer intended, CSS is
+          required. CSS is a markup language which tells internet browsers how
+          to display HTML elements, and the one of the most important things
+          specified by the CSS for each element is how to display the element's
+          box model.
+        </p>
+        <p>The box model is made up of four components:</p>
+        <br />
+        <ul>
+          <li>The Content</li>
+          <li>The Padding</li>
+          <li>The Border</li>
+          <li>The Margin</li>
+        </ul>
+        <p>
+          CSS can tell a browser how to display each of these components in very
+          different ways. Take a look at the below examples of the same element
+          formatted with different alterations to the box model:
+        </p>
+        <div class="blog-grid2">
+          <p id="bx-example1">I'M AN ELEMENT AND I HAVE A BOX!</p>
+          <p id="bx-example2">I'M AN ELEMENT AND I HAVE A BOX!</p>
+          <p id="bx-example3">I'M AN ELEMENT AND I HAVE A BOX!</p>
+          <p id="bx-example4">I'M AN ELEMENT AND I HAVE A BOX!</p>
+          <p id="bx-example5">I'M AN ELEMENT AND I HAVE A BOX!</p>
+          <p id="bx-example6">I'M AN ELEMENT AND I HAVE A BOX!</p>
+        </div>
+      </section>
+      <div class="divider divider2"></div>
+      <section class="basic-section">
+        <h2>The Components Explained</h2>
+        <h3>CONTENT</h3>
+        <div class="blog-flex">
+          <p>
+            The content of the element is what goes between the HTML tags in the
+            markup. It could be text, it could be imagery... or it could be
+            nothing! Some very clever CSS tricks can be achieved by adding
+            styles to empty boxes! Most elements however do have content, and
+            it's normally the content that gets out attention first.
+          </p>
+          <img src="../img/boxcontent.png" alt="Diagram of Box Content" />
+        </div>
+        <h3>PADDING</h3>
+        <div class="blog-flex">
+          <img src="../img/boxpadding.png" alt="Diagram of Box Padding" />
+          <p>
+            Padding is the space immediately around the content. Not to be
+            confused with Margin, increasing the amount of padding will increase
+            the size of the element's box! This is great for allowing background
+            colours and other styles to carry beyond the confines of the
+            content, and can be used to great effect.
+          </p>
+        </div>
+        <h3>BORDER</h3>
+        <div class="blog-flex">
+          <p>
+            The Border is the boundary that lies at the edge of the box,
+            immediately after the padding. It can be styled in a variety of ways
+            (or not at all!) to give a variety of different appearances. Some
+            clever CSS tricks can be used with borders to add stylistic flair to
+            otherwise boring elements.
+          </p>
+          <img src="../img/boxborder.png" alt="Diagram of Box Border" />
+        </div>
+        <h3>MARGIN</h3>
+        <div class="blog-flex">
+          <img src="../img/boxmargin.png" alt="Diagram of Box Margin" />
+          <p>
+            Perhaps the most important of all is Margin. Margin defines the
+            space
+            <em>outside</em> the box that no other elements are allowed to
+            enter. It can be used to position elements around a page, or stop
+            them overlapping in some cases. From a design perspective, empty
+            space can be just as important as content, and clever manipulation
+            of margin can achieve this.
+          </p>
+        </div>
+      </section>
+      <div class="divider divider3"></div>
+      <section class="basic-section grey-section">
+        <h2>It sounds simple - but it's not!</h2>
+        <p>
+          It's really easy for all the padding and margin on multiple different
+          elements to get confusing and out of hand really fast. Conflicting CSS
+          rules can cause content to break the rules and burst out of its box.
+          What's more confusing, different display types have different rules
+          for whether or not they listen to padding and margin rules! Inline
+          elements ignore vertical margin for example. Start throwing in things
+          like Flexbox and Grid and it all gets
+          <strong>REAL</strong> interesting!
+        </p>
+        <p>
+          Like most things, I guess the best way to master it is practice! Lets
+          do this!
+        </p>
+      </section>
+    </main>
+    <footer id="pagebottom">
+      <div class="contact">
+        <h2>CONTACT</h2>
+        <ul>
+          <li>PHONE - 0485 352 159</li>
+          <li>EMAIL - peter.hind@nottelling.com</li>
+          <li><a href="#pagetop">BACK TO TOP</a></li>
+        </ul>
+      </div>
+      <div class="socials">
+        <img
+          src="../img/linkedin.png"
+          alt="linkedin logo"
+          class="social-icon"
+        />
+        <a href="https://github.com/peter-hind" target="_blank"
+          ><img src="../img/github.png" alt="github logo" class="social-icon"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
