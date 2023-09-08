@@ -80,6 +80,10 @@ a:visited {
   background-image: url(../img/layereddiv4.svg);
 }
 
+.divider5 {
+  background-image: url(../img/layereddiv5.svg);
+}
+
 /* NAV-BAR */
 nav {
   position: fixed;
@@ -293,6 +297,18 @@ footer a {
   padding: 60px;
   border-radius: 20px;
   border: purple dashed 3px;
+}
+
+/*IDENTITY & VALUES PAGE STYLING*/
+
+ol {
+  text-align: left;
+}
+
+.bx-shadow {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 10px;
 }
 
 /* RESPONSIVE LAYOUT STYLING */
