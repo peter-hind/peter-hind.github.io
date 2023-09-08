@@ -311,6 +311,10 @@ ol {
   border-radius: 10px;
 }
 
+.strike {
+  text-decoration: line-through;
+}
+
 /* RESPONSIVE LAYOUT STYLING */
 
 @media screen and (min-width: 3300px) {
