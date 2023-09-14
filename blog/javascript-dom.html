@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>JavaScript & The Document Object Model</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="icon" href="../img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="identity-values.html">About</a></li>
+          <li><a href="#pagebottom">Contact</a></li>
+          <a href="../index.html"
+            ><img
+              src="../img/nav-logo.png"
+              alt="Pete looking quizzical"
+              class="nav-logo"
+          /></a>
+          <li><a href="../index.html#tech-grid">Tech</a></li>
+          <li><a href="../index.html#core-grid">Core</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="pagetop">
+      <section class="blog-hero">
+        <h1>JavaScript & The Document Object Model</h1>
+        <img
+          src="../img/box-model.png"
+          alt="The CSS Box Model"
+          class="basic-img"
+        />
+      </section>
+      <div class="divider divider1"></div>
+      <section id="dark-blog" class="basic-section">
+        <h2>HTML, CSS and JavaScript - The Three Tradies</h2>
+        <p>
+          Building websites is just like building houses. There are lots of
+          different parts involved, all of which need to work together to create
+          a functional and attractive finished product. So while a house needs a
+          carpenter, decorator and an electrician to get up and running, a
+          website has its own versions of these!
+        </p>
+        <h3>HTML - The Carpenter</h3>
+        <div class="blog-flex">
+          <p>
+            HTML isn't really a programming language believe it or not (neither
+            is CSS), but rather a markup language. It's role is literally to
+            label the content on the page and tell the browser what kind of
+            content it is - simple! This HTML structure makes up the basic body
+            or frame of the website. Carpenters do the same job when building a
+            house - they lay out the basic structure and location of the various
+            areas in the form of a frame. This frame <em>could</em> function as
+            a very barebones house if required, but it doesn't really do the job
+            by today's standards. HTML is the same; all you need for a webpage
+            to display is an HTML document! But just by itself it will look
+            pretty darn average (read: shit). We need some help from some other
+            tradies!
+          </p>
+          <img class="basic-img" alt="HTML Logo" src="../img/html.png" />
+        </div>
+        <h3>CSS - The Interior Designer</h3>
+        <div class="blog-flex">
+          <img class="basic-img" alt="HTML Logo" src="../img/css.png" />
+          <p>
+            Once our house frame is built, we need to make it cosy and suit our
+            personal design tastes! That's where our Interior Designer - or CSS
+            comes into play. CSS is another markup language just like HTML, but
+            this time instead of laying out our frame and specifying what is
+            what, we are taking the elements of our frame and specifying how we
+            want them to <em>look.</em> CSS has an absolutely gigantic array of
+            different aspects you can change on virtually any element, meaning
+            you can decorate your webpage in literally thousands of different
+            ways! Just like different designers can make the inside of a house
+            look completely different, so too can different CSS styles
+            completely change the look and feel of a website.
+          </p>
+        </div>
+        <h3>JavaScript - The Electrician</h3>
+        <div class="blog-flex">
+          <p>
+            JavaScript is a very different beast when compared to HTML and CSS -
+            and it is <em>definitely</em> a bonafide programming language. It
+            enables users to interact with and control certain elements being
+            displayed on a webpage, much like you could turn the lights on and
+            off in a house. While HTML and CSS create the website and its
+            design/layout, JavaScript brings it to life. Almost anything is
+            possible when correctly using HTML, CSS and JavaScript together in a
+            complementary way.
+          </p>
+          <img class="basic-img" alt="HTML Logo" src="../img/js.png" />
+        </div>
+      </section>
+      <div class="divider divider2"></div>
+      <section class="basic-section">
+        <h2>Control Flow & Loops</h2>
+        <h3>Control Flow</h3>
+        <div class="blog-flex">
+          <p>
+            The content of the element is what goes between the HTML tags in the
+            markup. It could be text, it could be imagery... or it could be
+            nothing! Some very clever CSS tricks can be achieved by adding
+            styles to empty boxes! Most elements however do have content, and
+            it's normally the content that gets out attention first.
+          </p>
+          <img src="../img/boxcontent.png" alt="Diagram of Box Content" />
+        </div>
+        <h3>PADDING</h3>
+        <div class="blog-flex">
+          <img src="../img/boxpadding.png" alt="Diagram of Box Padding" />
+          <p>
+            Padding is the space immediately around the content. Not to be
+            confused with Margin, increasing the amount of padding will increase
+            the size of the element's box! This is great for allowing background
+            colours and other styles to carry beyond the confines of the
+            content, and can be used to great effect.
+          </p>
+        </div>
+        <h3>BORDER</h3>
+        <div class="blog-flex">
+          <p>
+            The Border is the boundary that lies at the edge of the box,
+            immediately after the padding. It can be styled in a variety of ways
+            (or not at all!) to give a variety of different appearances. Some
+            clever CSS tricks can be used with borders to add stylistic flair to
+            otherwise boring elements.
+          </p>
+          <img src="../img/boxborder.png" alt="Diagram of Box Border" />
+        </div>
+        <h3>MARGIN</h3>
+        <div class="blog-flex">
+          <img src="../img/boxmargin.png" alt="Diagram of Box Margin" />
+          <p>
+            Perhaps the most important of all is Margin. Margin defines the
+            space
+            <em>outside</em> the box that no other elements are allowed to
+            enter. It can be used to position elements around a page, or stop
+            them overlapping in some cases. From a design perspective, empty
+            space can be just as important as content, and clever manipulation
+            of margin can achieve this.
+          </p>
+        </div>
+      </section>
+      <div class="divider divider3"></div>
+      <section class="basic-section grey-section">
+        <h2>It sounds simple - but it's not!</h2>
+        <p>
+          It's really easy for all the padding and margin on multiple different
+          elements to get confusing and out of hand really fast. Conflicting CSS
+          rules can cause content to break the rules and burst out of its box.
+          What's more confusing, different display types have different rules
+          for whether or not they listen to padding and margin rules! Inline
+          elements ignore vertical margin for example. Start throwing in things
+          like Flexbox and Grid and it all gets
+          <strong>REAL</strong> interesting!
+        </p>
+        <p>
+          Like most things, I guess the best way to master it is practice! Lets
+          do this!
+        </p>
+      </section>
+    </main>
+    <footer id="pagebottom">
+      <div class="contact">
+        <h2>CONTACT</h2>
+        <ul>
+          <li>PHONE - 0485 352 159</li>
+          <li>EMAIL - peter.hind@nottelling.com</li>
+          <li><a href="#pagetop">BACK TO TOP</a></li>
+        </ul>
+      </div>
+      <div class="socials">
+        <img
+          src="../img/linkedin.png"
+          alt="linkedin logo"
+          class="social-icon"
+        />
+        <a href="https://github.com/peter-hind" target="_blank"
+          ><img src="../img/github.png" alt="github logo" class="social-icon"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
