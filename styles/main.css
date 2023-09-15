@@ -42,7 +42,7 @@ a:visited {
 }
 
 .basic-section {
-  padding: 10vh 30vw;
+  padding: 10vh 10vw;
   font-size: 1.5rem;
   text-align: center;
 }
@@ -315,6 +315,14 @@ ol {
   text-decoration: line-through;
 }
 
+/*DOM PAGE STYLING*/
+
+.bracket {
+  font-size: clamp(35px, 12vw, 180px);
+  font-weight: bold;
+  color: var(--dark-monochrome);
+}
+
 /* RESPONSIVE LAYOUT STYLING */
 
 @media screen and (min-width: 3300px) {
@@ -323,6 +331,10 @@ ol {
   }
   .hero-column2 {
     margin-right: 10vw;
+  }
+
+  .basic-section {
+    padding: 10vh 20vw;
   }
 }
 @media screen and (max-width: 2190px) {
@@ -337,6 +349,10 @@ ol {
   .hero-column2 {
     bottom: 10vh;
   }
+
+  .basic-section {
+    padding: 10vh 15vw;
+  }
 }
 
 @media screen and (max-width: 1700px) {
@@ -349,8 +365,12 @@ ol {
   .basic-img {
     height: 30vw;
   }
-  .basic-section {
-    padding: 10vh 10vw;
+  .blog-flex {
+    flex-direction: column;
+  }
+
+  .blog-flex2 {
+    flex-direction: column-reverse;
   }
 }
 
@@ -404,10 +424,6 @@ ol {
   footer a {
     margin: 5px;
     text-decoration: none;
-  }
-
-  .blog-flex {
-    flex-direction: column;
   }
 
   .social-icon {

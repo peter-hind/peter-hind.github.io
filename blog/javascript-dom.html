@@ -34,9 +34,9 @@
       <section class="blog-hero">
         <h1>JavaScript & The Document Object Model</h1>
         <img
-          src="../img/box-model.png"
-          alt="The CSS Box Model"
-          class="basic-img"
+          src="../img/JSmain.png"
+          alt="JavaScript Logo Large"
+          class="basic-img bx-shadow"
         />
       </section>
       <div class="divider divider1"></div>
@@ -50,7 +50,7 @@
           website has its own versions of these!
         </p>
         <h3>HTML - The Carpenter</h3>
-        <div class="blog-flex">
+        <div class="blog-flex blog-flex2">
           <p>
             HTML isn't really a programming language believe it or not (neither
             is CSS), but rather a markup language. It's role is literally to
@@ -85,7 +85,7 @@
           </p>
         </div>
         <h3>JavaScript - The Electrician</h3>
-        <div class="blog-flex">
+        <div class="blog-flex blog-flex2">
           <p>
             JavaScript is a very different beast when compared to HTML and CSS -
             and it is <em>definitely</em> a bonafide programming language. It
@@ -103,68 +103,177 @@
       <section class="basic-section">
         <h2>Control Flow & Loops</h2>
         <h3>Control Flow</h3>
-        <div class="blog-flex">
+        <div class="blog-flex blog-flex2">
           <p>
-            The content of the element is what goes between the HTML tags in the
-            markup. It could be text, it could be imagery... or it could be
-            nothing! Some very clever CSS tricks can be achieved by adding
-            styles to empty boxes! Most elements however do have content, and
-            it's normally the content that gets out attention first.
+            A computer program is nothing but a big long list of instructions.
+            This is what's great about computers - they do exactly what you tell
+            them to! The biggest downside of computers is also that they do
+            exactly what you tell them to - not what you want them to! A bit of
+            JavaScript is just like any other programming language - a list of
+            instructions that the computer performs one after the other.
+            However, sometimes an instruction might be something like "go read
+            this other instruction fifty lines down the page and come back when
+            you are done", or "do this same instruction fifty times". Having a
+            good command over the order in which you tell the computer to
+            execute its commands is called having a good Control Flow!
           </p>
-          <img src="../img/boxcontent.png" alt="Diagram of Box Content" />
+          <img
+            src="../img/studyplan.jpg"
+            alt="Control Flow can be confusing"
+            class="basic-img bx-shadow"
+          />
         </div>
-        <h3>PADDING</h3>
+        <h3>Loops</h3>
         <div class="blog-flex">
-          <img src="../img/boxpadding.png" alt="Diagram of Box Padding" />
+          <img
+            src="../img/loops.jpeg"
+            alt="Lego Rollercoaster"
+            class="basic-img bx-shadow"
+          />
           <p>
-            Padding is the space immediately around the content. Not to be
-            confused with Margin, increasing the amount of padding will increase
-            the size of the element's box! This is great for allowing background
-            colours and other styles to carry beyond the confines of the
-            content, and can be used to great effect.
-          </p>
-        </div>
-        <h3>BORDER</h3>
-        <div class="blog-flex">
-          <p>
-            The Border is the boundary that lies at the edge of the box,
-            immediately after the padding. It can be styled in a variety of ways
-            (or not at all!) to give a variety of different appearances. Some
-            clever CSS tricks can be used with borders to add stylistic flair to
-            otherwise boring elements.
-          </p>
-          <img src="../img/boxborder.png" alt="Diagram of Box Border" />
-        </div>
-        <h3>MARGIN</h3>
-        <div class="blog-flex">
-          <img src="../img/boxmargin.png" alt="Diagram of Box Margin" />
-          <p>
-            Perhaps the most important of all is Margin. Margin defines the
-            space
-            <em>outside</em> the box that no other elements are allowed to
-            enter. It can be used to position elements around a page, or stop
-            them overlapping in some cases. From a design perspective, empty
-            space can be just as important as content, and clever manipulation
-            of margin can achieve this.
+            Loops are one of the most fundamental concepts in computer
+            programming. Sometimes you want the computer to perform the same set
+            of instructions multiple times, or perhaps on different things. Say
+            you have hundreds of balloons and you need to know how many of each
+            colour you have. You could write out the same set of instructions
+            hundreds of times to record each colour for each balloon, or you
+            could write a loop once, and have it repeat hundreds of times. Much
+            easier! It's all about making life easy and writing as little code
+            as possible.
           </p>
         </div>
       </section>
       <div class="divider divider3"></div>
       <section class="basic-section grey-section">
-        <h2>It sounds simple - but it's not!</h2>
+        <h2>The DOM:</h2>
+        <h2><span class="strike">Delayed Onset Muscle Soreness</span></h2>
+        <h2>Document Object Model</h2>
         <p>
-          It's really easy for all the padding and margin on multiple different
-          elements to get confusing and out of hand really fast. Conflicting CSS
-          rules can cause content to break the rules and burst out of its box.
-          What's more confusing, different display types have different rules
-          for whether or not they listen to padding and margin rules! Inline
-          elements ignore vertical margin for example. Start throwing in things
-          like Flexbox and Grid and it all gets
-          <strong>REAL</strong> interesting!
+          The great thing about JavaScript is that it can change or move (or
+          remove!) elements and styles from our HTML and CSS. This means that
+          user interaction can change the way the webpage displays. In order to
+          do this, the browser provides a JavaScript object for your JavaScript
+          code to use called the Document Object. This object is basically like
+          a family tree that contains all of the page's elements and styles.
+          Using this tree we can write JavaScript that specifically targets
+          virtually anything on the page and changes it how we see fit! The DOM
+          (Document Object Model) is like the bridge that connects our
+          JavaScript code to the HTML and CSS on the page.
         </p>
         <p>
-          Like most things, I guess the best way to master it is practice! Lets
-          do this!
+          Within the DOM, every changeable aspect of the document is called a
+          'node'. The document itself, the HTML elements, the contents of those
+          elements - all of these are nodes that can be directly access and
+          changed via the DOM.
+        </p>
+      </section>
+      <div class="divider divider5"></div>
+      <section class="basic-section">
+        <h2>Objects, Arrays, and Functions</h2>
+        <h3>Storing Data</h3>
+        <p>
+          Computer programs basically carry out operations on sets of data. So
+          we have to have somewhere to store the data, right? Objects and Arrays
+          are two different types of data storage that allow for large amounts
+          of data to be stored. So what's the difference? Well, depending on the
+          type of data being stored, you might prefer one over the other:
+        </p>
+        <h4>Objects</h4>
+        <div class="blog-flex">
+          <img
+            class="basic-img bx-shadow"
+            alt="Object Brackets"
+            src="../img/object.png"
+          />
+          <p>
+            Objects are essentially a collection of key:value pairs. So if your
+            data set has lots of information about one particular thing (or
+            group of things), then an object might be the way to go. For
+            example, you could use an object to record all of the information
+            about a car: <br />
+            <br />
+            let car = { <br />
+            make: "kia" <br />
+            model: "carnival" <br />
+            engine: "v6" <br />
+            colour: "blue" <br />
+            } <br />
+            <br />
+            Objects have the added advantage of being able to store 'methods' as
+            well, which are functions specific to that object (more on functions
+            below). So in our example we could have methods like "startEngine()"
+            or "lowerWindows()" etc. You may not realise it, but if you've ever
+            written any JavaScript before you have probably already used
+            objects. The famous "console.log()" command is simply accessing the
+            "console" object and calling its "log" method.
+          </p>
+        </div>
+        <p>
+          Objects don't store their properties and methods in any particular
+          order, as each value has an associated key to make it easy to find. So
+          changing the make of our car is as easy as:<br />
+          <br />
+          car.make = "ferrari" <br />
+          <br />
+          Adding new properties is just as easy: <br />
+          <br />
+          car.owner = "Pete" <br />
+          <br />
+          The main disadvantage of Objects is iterability (if that's a
+          word...?). Let's talk about Arrays and get into exactly what this
+          means!
+        </p>
+        <h4>Arrays</h4>
+        <div class="blog-flex blog-flex2">
+          <p>
+            Arrays are relatively simple when compared to Objects. They simply
+            hold a long list of items, with each item given an index by which it
+            can be located (which helpfully starts at 0, not 1). This has
+            certain advantages and disadvantages. Since none of the items has a
+            key to locate it like an object would, finding certain things in an
+            array can be a bit trickier. This is where iteration comes in.
+            Searching through arrays using loops is a very powerful way of
+            manipulating data once you understand how to do it. So while it's
+            not as simple as getting a property from an object, with an array
+            you can select multiple different sections of the data and
+            manipulate them in a variety of ways that would be much more
+            time-consuming if the data was in object form.
+          </p>
+          <img
+            class="basic-img bx-shadow"
+            alt="Array Brackets"
+            src="../img/array.png"
+          />
+        </div>
+        <p>
+          Of course, like all thing in programming, this is just the tip of the
+          iceberg. Things get much more complicated when you start seeing arrays
+          of objects and vice versa! Again, I expect practice will make perfect
+          when it comes to efficiently extracting information from complex data
+          structures!
+        </p>
+        <h4>Functions</h4>
+        <img
+          class="basic-img bx-shadow"
+          alt="Arrow Function"
+          src="../img/function.png"
+        />
+        <p>
+          So once we have extracted our data from our objects/arrays/whatever,
+          we will probably want to do something to it, right? What if we want to
+          do the same thing to a heap of different bits data from different
+          places? Programmers are lazy and try to always avoid writing more code
+          than they have to. Remember - DRY coding (Dont. Repeat. Yourself) is
+          better than WET coding (Write. Everything. Twice.)
+        </p>
+        <p>
+          Instead of writing out the same piece of code every single time they
+          need to do it, it's better to create a function. Functions are
+          basically chunks of code that you can call at any time. You can pass
+          them different data to run the same operations on. Lets say you have
+          some objects and you want to change their color properties to blue.
+          You simply write the code to do it once in a function, then pass the
+          objects to the function to run the code on. Timesaver!
         </p>
       </section>
     </main>
