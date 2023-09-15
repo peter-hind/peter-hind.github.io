@@ -323,6 +323,13 @@ ol {
   color: var(--dark-monochrome);
 }
 
+/*EQ PAGE STYLING*/
+
+.bullets {
+  list-style-type: initial;
+  text-align: left;
+}
+
 /* RESPONSIVE LAYOUT STYLING */
 
 @media screen and (min-width: 3300px) {
