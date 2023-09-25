@@ -330,6 +330,14 @@ ol {
   text-align: left;
 }
 
+/*MAORI WELLBEING*/
+
+.icon-img {
+  display: block;
+  height: 20vh;
+  width: auto;
+  margin: 2vh auto;
+}
 /* RESPONSIVE LAYOUT STYLING */
 
 @media screen and (min-width: 3300px) {
