@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>Problem Solving</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="icon" href="../img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="identity-values.html">About</a></li>
+          <li><a href="#pagebottom">Contact</a></li>
+          <a href="../index.html"
+            ><img
+              src="../img/nav-logo.png"
+              alt="Pete looking quizzical"
+              class="nav-logo"
+          /></a>
+          <li><a href="../index.html#tech-grid">Tech</a></li>
+          <li><a href="../index.html#core-grid">Core</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="pagetop">
+      <section class="blog-hero">
+        <h1>My Problem Solving Methods</h1>
+        <img
+          src="../img/JSmain.png"
+          alt="JavaScript Logo Large"
+          class="basic-img bx-shadow"
+        />
+      </section>
+      <div class="divider divider1"></div>
+      <section id="dark-blog" class="basic-section">
+        <h2>Blocked on a simple problem - pesky return statements</h2>
+        <h3>The Problem - It was not hard</h3>
+        <p>
+          Quite a few times I have forgotten that when writing functions if you
+          want them to return something, you need a return statement. This is
+          pretty obvious, but has held me up a lot - because I can be a
+          consummate idiot.
+        </p>
+        <h3>The Fix - Problem Solving</h3>
+        <p>
+          My first step for me is always a quick google to see if I've forgotten
+          something stupid (like a return statement). Unfortunately in most of
+          these cases it wasn't immediately clear why my code wasn't working, so
+          I found that I wasn't immediately sure what to google. I checked that
+          all my basic code made sense and checked my syntax against the
+          relevant documentation, and double/triple checked all my spelling -
+          although VSCode is pretty good at suggesting the correct options to
+          you, which I've found significantly minimises these kind of stuff ups.
+          Still nothing - everything looked all good!
+        </p>
+        <p>
+          So far I've found that the best debugging method for me is the rubber
+          ducky method (or in my case - the "random duplo man my son left on my
+          desk one day method"). I just go through the code line-by-line and
+          explain to Ferdinand (that's his name - he is a latino builder called
+          Ferdinand) what everything does. Eventually I'll tell Ferdy that the
+          function then passes its results back to the main code. Except it
+          doesn't. Because there is no return statement. Ferdy will then look at
+          me knowingly, and I'll swear sometimes he enigmatically nods his
+          little duplo head, like a minature Yoda (but latino and a builder).
+          I'll say: "Thanks Ferdy, turns out I'm an idiot!" and the problem will
+          be fixed! Until tomorrow, when I will do it again...
+        </p>
+        <h3>The Feelings - Fun but Frustrating</h3>
+        <p>
+          Solving problems like this can be fun, but also frustrating depending
+          on your mindset (see this week's
+          <a href="neuroplasticity.html" target="_blank">core post!</a>) Fun
+          because when it doesn't work it's great to figure out WHY it doesn't
+          work, and you get a little dopamine hit when you figure it out.
+          Frustrating because you might have limited time and other stuff to do
+          - especially if it's a simple fix that it took you ages to spot.
+        </p>
+        <h3>The Lessons - What's the takeaway?</h3>
+        <p>
+          Almost every time I've found myself stuck for more than ten minutes,
+          it's turned out to be the easiest fix imaginable. It almost seems like
+          the longer it takes you to figure it out, the simpler the problem is.
+          I think this is becuase we have a built-in idea that the time taken to
+          solve problems is proportional to their complexity - which couldn't be
+          farther from the truth as is turns out. The longer the problem went
+          on, the more I assumed it had to be something complicated. A variable
+          in the wrong scope maybe? But no, just a simple function that does its
+          job perfectly, and doesn't tell you the answer! Lesson learned - just
+          because you haven't figured it out quickly, doesn't mean it isn't
+          simple!
+        </p>
+      </section>
+      <div class="divider divider2"></div>
+      <section class="basic-section">
+        <h2>Elegant problem solving - The Javascript Cafe</h2>
+        <h3>The problem - targeting elements</h3>
+        <p>
+          We recently had a code-along challenge to build a cafe using
+          JavaScript, which had some fun stretch exercises. One was to add a
+          button to each product to restock it by one whenever the button was
+          clicked. One option was to add event listeners / functionality to each
+          button individually, but this seemed a bit repetitive. I wanted to
+          have one function take care of every button push and restock
+          operation, without having to rewrite Joseph's code (seemed like
+          cheating).
+        </p>
+        <h3>The Fix - googling documentation</h3>
+        <p>
+          For this one I did some research on W3 Schools and the MDN Docs
+          websites to try and find a solution. Eventually I found a way to
+          target the previous sibling of an element using JavaScript, meaning
+          when the button was clicked it would apply the restocking operation to
+          the element before it - perfect for what I needed!
+        </p>
+        <h3>The Feelings - exciting but overwhelming</h3>
+        <p>
+          Checking out those websites can be a daunting process. There is a
+          whole lot of stuff on there that is way beyond my level currently, so
+          it's easy to get a hit of imposter syndrome when wading in and trying
+          to find the slice of information you need. That being said, when you
+          hit on something that you think might help you and then actually make
+          it work, then it makes you feel like some kind of web-developing god!
+        </p>
+        <h3>The Lessons - you aren't an imposter</h3>
+        <p>
+          In the tech space there is always going to be more stuff you don't
+          know about than stuff that you do - so the most important lesson from
+          this problem was that you just have to accept that and not let it get
+          to you, and not let yourself get distracted by all the other shiny
+          things you might encounter on them interwebs!
+        </p>
+      </section>
+      <div class="divider divider3"></div>
+      <section class="basic-section grey-section">
+        <h2>Problem-solving techniques examined</h2>
+        <p>
+        Here are the most well-known problem-solving techniques, and how I feel I manage when using them:
+        <ol>
+          <li><strong>Pseudocode - </strong>I like using pseudocode a lot when starting out on a big problem and I'm not entirely sure how to solve it. Pseudocode rarely ends up resembling the final product in my case, but it can be invaluable for identifying key processes and milestones, and getting you started (which can be the biggest problem!)</li>
+          <li><strong>Trying something - </strong>"Ehhhhh... maybe this will work?" Sometimes you just get a feeling that something might work and you don't know why. I always give it a shot when that happens! If it works, great - but I always do my homework and figure out WHY it worked after the fact... </li>
+          <li><strong>The Rubber Ducky Method - </strong>I love this one (see above). The downside to this is that it can be a bit time-consuming, but when I get truly stuck I know that Ferdy will always have my back and help me out. He talks with Liam Neeson's voice.</li>
+          <li><strong>Reading Error Messages - </strong>I feel like I need to get better at this, or at least better at writing code that produces helpful error messages (I guess this is more on the testing side of things though). Whenever an error message pops up I always find it really helpful - especially as most of them tell you nexactly which line of your code is causing the issues.</li>
+          <li><strong>console.logging - </strong>I got very familiar with this one during the JS Kata we did this sprint. This can be really helpful for those "nope, everything is perfect, this should definitely work, I'm not wrong, JavaScript is wrong!" moments. Console.logging every major step is great for pointing you in the direction of the chunk of code that isn't working as you expect. </li>
+          <li><strong>Googling - </strong>Googling is the best. Turns out somebody has always had the exact same problem as you before - you just have to find out how they solved it, and the internet is great for that. Fora like Stack Overflow or similar are invaluable. There are also numerous coding websites for developing new skills that can help solve future problems!</li>
+          <li><strong>Asking your peers for help - </strong>I don't think this is one I've tried yet, but given that our move to NZ has put me behind the pace for the last couple of sprints I can see me benefitting from everyone else's experience as I finish them off! Will definitely be asking people for a bit of help to get through these I'm sure!</li>
+          <li><strong>Asking coaches for help - </strong>I've been doing this whenever there are task-specific problems I just can't get my head around, but tend to leave it as a last resort as I don't want my problems solved for me. Most of the facilitators are really good at just nudging you in the right direction though.</li>
+          <li><strong>Improving processes through reflection - </strong>This is really helpful when everything is getting a bit overwhelming. I like to step back and go for a 'mindfulness walk'&trade; to clear my head and come back to the problem later with fresh eyes.</li>
+        </ol>
+
+        One of my biggest issues with problem-solving is asking for help. I always like to try and find solutions by myself where possible, and identifying the line where I should give up and ask for some pointers is always tricky for me. I'm sure once we get into bootcamp I will get better at this, but I've made a point to limit my self-problem-solving time to fifteen minutes before reaching out from now on!
+        </p>
+      </section>
+      
+    </main>
+    <footer id="pagebottom">
+      <div class="contact">
+        <h2>CONTACT</h2>
+        <ul>
+          <li>PHONE - 0485 352 159</li>
+          <li>EMAIL - peter.hind@nottelling.com</li>
+          <li><a href="#pagetop">BACK TO TOP</a></li>
+        </ul>
+      </div>
+      <div class="socials">
+        <img
+          src="../img/linkedin.png"
+          alt="linkedin logo"
+          class="social-icon"
+        />
+        <a href="https://github.com/peter-hind" target="_blank"
+          ><img src="../img/github.png" alt="github logo" class="social-icon"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
