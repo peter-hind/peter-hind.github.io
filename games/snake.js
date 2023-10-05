@@ -117,7 +117,7 @@ function gameIsOver() {
   clearInterval(intervalId)
   foodCell.classList.remove('food')
   snake = []
-  snakeBox.style.backgroundImage = "url('img/gameover.png')"
+  snakeBox.style.backgroundImage = "url('../img/gameover.png')"
   tryAgain.style.display = 'block'
   updateScore()
 }
@@ -127,7 +127,7 @@ function restartGame() {
   gameOver = false
   // nextCell = 5052
   tryAgain.style.display = 'none'
-  snakeBox.style.backgroundImage = "url('img/snake.png')"
+  snakeBox.style.backgroundImage = "url('../img/snake.png')"
   snake = [cells[5049], cells[5050], cells[5051]]
   intervalId = setInterval(nextCell, 60)
 
