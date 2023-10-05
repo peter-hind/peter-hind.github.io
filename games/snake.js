@@ -164,6 +164,12 @@ function updateScore() {
 
 tryAgain.onclick = restartGame
 
+window.addEventListener('keydown', function (e) {
+  if (e.key.startsWith('Arrow')) {
+    e.preventDefault()
+  }
+})
+
 document.addEventListener('keyup', function (e) {
   switch (e.key) {
     case 'ArrowUp':
