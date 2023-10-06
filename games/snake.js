@@ -114,7 +114,6 @@ function gameIsOver() {
   }
   if (score > highScore) {
     highScore = score
-    score = 0
   }
   clearInterval(intervalId)
   foodCell.classList.remove('food')
@@ -127,6 +126,7 @@ function gameIsOver() {
 function restartGame() {
   direction = 'east'
   gameOver = false
+  score = 0
   tryAgain.style.display = 'none'
   snakeBox.style.backgroundImage = "url('../img/snake.png')"
   snake = [cells[5049], cells[5050], cells[5051]]
