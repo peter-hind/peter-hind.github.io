@@ -130,7 +130,7 @@ function restartGame() {
   tryAgain.style.display = 'none'
   snakeBox.style.backgroundImage = "url('../img/snake.png')"
   snake = [cells[5049], cells[5050], cells[5051]]
-  intervalId = setInterval(nextCell, 60)
+  intervalId = setInterval(nextCell, 40)
 
   displaySnake()
   foodPop()
