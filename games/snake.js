@@ -1,10 +1,12 @@
 const snakeBox = document.getElementById('container')
 const tryAgain = document.getElementById('reset')
 const cells = []
-let intervalId = setInterval(nextCell, 60)
+let intervalId = setInterval(nextCell, 40)
 const scoreDisplay = document.getElementById('score')
 const highscoreDisplay = document.getElementById('highscore')
 let direction = 'east'
+let directionTimer
+let directionBool = true
 let foodCell
 let score = 0
 let highScore = 0
@@ -125,7 +127,6 @@ function gameIsOver() {
 function restartGame() {
   direction = 'east'
   gameOver = false
-  // nextCell = 5052
   tryAgain.style.display = 'none'
   snakeBox.style.backgroundImage = "url('../img/snake.png')"
   snake = [cells[5049], cells[5050], cells[5051]]
@@ -154,12 +155,15 @@ function foodPop() {
   } else {
     foodPop()
   }
-  console.log(validFood)
 }
 
 function updateScore() {
   scoreDisplay.innerHTML = `Score: ${score}`
   highscoreDisplay.innerHTML = `Highscore: ${highScore}`
+}
+
+function directionTimeout() {
+  directionBool = true
 }
 
 tryAgain.onclick = restartGame
@@ -173,23 +177,31 @@ window.addEventListener('keydown', function (e) {
 document.addEventListener('keyup', function (e) {
   switch (e.key) {
     case 'ArrowUp':
-      if (direction !== 'south') {
+      if (direction !== 'south' && directionBool === true) {
         direction = 'north'
+        directionBool = false
+        directionTimer = setTimeout(directionTimeout, 41)
       }
       break
     case 'ArrowDown':
-      if (direction !== 'north') {
+      if (direction !== 'north' && directionBool === true) {
         direction = 'south'
+        directionBool = false
+        directionTimer = setTimeout(directionTimeout, 41)
       }
       break
     case 'ArrowRight':
-      if (direction !== 'west') {
+      if (direction !== 'west' && directionBool === true) {
         direction = 'east'
+        directionBool = false
+        directionTimer = setTimeout(directionTimeout, 41)
       }
       break
     case 'ArrowLeft':
-      if (direction !== 'east') {
+      if (direction !== 'east' && directionBool === true) {
         direction = 'west'
+        directionBool = false
+        directionTimer = setTimeout(directionTimeout, 41)
       }
       break
   }
