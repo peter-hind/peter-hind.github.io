@@ -1,7 +1,8 @@
 const snakeBox = document.getElementById('container')
 const tryAgain = document.getElementById('reset')
 const cells = []
-let intervalId = setInterval(nextCell, 40)
+let refreshRate = 40
+let intervalId = setInterval(nextCell, refreshRate)
 const scoreDisplay = document.getElementById('score')
 const highscoreDisplay = document.getElementById('highscore')
 let direction = 'east'
@@ -130,7 +131,7 @@ function restartGame() {
   tryAgain.style.display = 'none'
   snakeBox.style.backgroundImage = "url('../img/snake.png')"
   snake = [cells[5049], cells[5050], cells[5051]]
-  intervalId = setInterval(nextCell, 40)
+  intervalId = setInterval(nextCell, refreshRate)
   updateScore()
   displaySnake()
   foodPop()
@@ -180,28 +181,28 @@ document.addEventListener('keyup', function (e) {
       if (direction !== 'south' && directionBool === true) {
         direction = 'north'
         directionBool = false
-        directionTimer = setTimeout(directionTimeout, 41)
+        directionTimer = setTimeout(directionTimeout, refreshRate + 1)
       }
       break
     case 'ArrowDown':
       if (direction !== 'north' && directionBool === true) {
         direction = 'south'
         directionBool = false
-        directionTimer = setTimeout(directionTimeout, 41)
+        directionTimer = setTimeout(directionTimeout, refreshRate + 1)
       }
       break
     case 'ArrowRight':
       if (direction !== 'west' && directionBool === true) {
         direction = 'east'
         directionBool = false
-        directionTimer = setTimeout(directionTimeout, 41)
+        directionTimer = setTimeout(directionTimeout, refreshRate + 1)
       }
       break
     case 'ArrowLeft':
       if (direction !== 'east' && directionBool === true) {
         direction = 'west'
         directionBool = false
-        directionTimer = setTimeout(directionTimeout, 41)
+        directionTimer = setTimeout(directionTimeout, refreshRate + 1)
       }
       break
   }

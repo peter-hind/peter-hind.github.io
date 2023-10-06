@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="calc.css" />
+    <link rel="icon" href="../img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../blog/identity-values.html">About</a></li>
+          <li><a href="#pagebottom">Contact</a></li>
+          <a href="../index.html"
+            ><img
+              src="../img/nav-logo.png"
+              alt="Pete looking quizzical"
+              class="nav-logo"
+          /></a>
+          <li><a href="../index.html#tech-grid">Tech</a></li>
+          <li><a href="../index.html#core-grid">Core</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Basic Calculator</h1>
+      <div class="main-calc">
+        <p id="brand">Pete's Crap JavaScript</p>
+        <p id="product">code calculator</p>
+        <input id="screen" type="text" disabled="disabled" />
+        <div class="row">
+          <button class="red-button">AC</button>
+          <button class="red-button">CE</button>
+          <button>%</button>
+          <button>÷</button>
+        </div>
+        <div class="row">
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>x</button>
+        </div>
+        <div class="row">
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>-</button>
+        </div>
+        <div class="row">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button class="long-button">+</button>
+        </div>
+        <div class="row">
+          <button>0</button>
+          <button>.</button>
+          <button>=</button>
+        </div>
+      </div>
+      <div class="divider divider3"></div>
+    </main>
+    <footer id="pagebottom">
+      <div class="contact">
+        <h2>CONTACT</h2>
+        <ul>
+          <li>PHONE - 0485 352 159</li>
+          <li>EMAIL - peter.hind@nottelling.com</li>
+          <li><a href="#pagetop">BACK TO TOP</a></li>
+        </ul>
+      </div>
+      <div class="socials">
+        <img
+          src="../img/linkedin.png"
+          alt="linkedin logo"
+          class="social-icon"
+        />
+        <a href="https://github.com/peter-hind" target="_blank"
+          ><img src="../img/github.png" alt="github logo" class="social-icon"
+        /></a>
+      </div>
+    </footer>
+    <script src="calc.js"></script>
+  </body>
+</html>
